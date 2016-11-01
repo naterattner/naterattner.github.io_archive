@@ -30,13 +30,20 @@
 
 /*END Top Landing Styles*/
 
-/*Nav Styles*/
+/*BEGIN Nav Styles*/
 nav {
   background-color: silver;
-  border-radius: 100%;
+  border-radius: 0 !important; 
 }
 
 nav li {
   text-align: center;
 }
 /*End Nav Styles*/
+
+/*BEGIN About Styles*/
+.about {
+  height: 1000px;
+}
+
+/*End About Styles*/
