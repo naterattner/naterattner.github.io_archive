@@ -1,1 +1,42 @@
-Hellow World
+/*BEGIN Top Landing Styles*/
+.landing {
+  background-color: #72bcd4;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing h1 {
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.headshot-container {
+
+}
+
+.landing img {
+  width: 200px;
+  height: 100;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  /*position:absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%, -50%);*/
+}
+
+/*END Top Landing Styles*/
+
+/*Nav Styles*/
+nav {
+  background-color: silver;
+  border-radius: 100%;
+}
+
+nav li {
+  text-align: center;
+}
+/*End Nav Styles*/
