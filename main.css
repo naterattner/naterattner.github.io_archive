@@ -33,12 +33,15 @@
 /*BEGIN Nav Styles*/
 nav {
   background-color: silver;
-  border-radius: 0 !important; 
+  border-radius: 0 !important;
 }
 
 nav li {
   text-align: center;
 }
+
+
+
 /*End Nav Styles*/
 
 /*BEGIN About Styles*/
