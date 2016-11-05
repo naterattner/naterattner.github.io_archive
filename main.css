@@ -41,12 +41,36 @@ nav li {
 }
 
 
+.affix {
+      top: 0;
+      width: 100%;
+  }
 
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
 /*End Nav Styles*/
 
 /*BEGIN About Styles*/
 .about {
-  height: 1000px;
+  height: 500px;
+  background-color: grey;
 }
 
 /*End About Styles*/
+
+/*BEGIN Projects Styles*/
+.projects {
+  height: 500px;
+  background-color: brown;
+}
+
+/*End Projects Styles*/
+
+/*BEGIN Contact Styles*/
+.contact {
+  height: 500px;
+  background-color: green;
+}
+
+/*End Contact Styles*/
