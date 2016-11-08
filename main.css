@@ -8,6 +8,7 @@
 .landing h1 {
   text-align: center;
   padding-top: 30vh;
+  margin-top: 0px;
 }
 
 .headshot-container {
@@ -100,9 +101,13 @@ nav li {
   text-align: center;
 }
 
-.portfolio-container {
-
+.projects-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 /*End Projects Styles*/
 
 /*BEGIN Contact Styles*/
