@@ -90,9 +90,18 @@ nav li {
 /*End About Styles*/
 
 /*BEGIN Projects Styles*/
+.projects h1 {
+  margin-bottom: 30px;
+}
+
 .projects img {
   height: 375px;
   width: 500px;
+  text-align: center;
+}
+
+.portfolio-container {
+
 }
 /*End Projects Styles*/
 
