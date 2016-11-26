@@ -58,6 +58,7 @@
 <div class="content-sections">
     <div class="row about text-center">
       <h2 id="about">About</h2>
+       <hr class="light">
       <div class="about-text col-lg-10 col-lg-offset-1">
         <p>Lorem ipsum dolor sit amet, nam mundi laboramus ut, veri utamur deserunt est id. Enim veniam docendi ea sed, eu vim oratio soleat molestiae. An pro putent mediocritatem. Nibh vocibus pertinax ea sit, tantas soleat necessitatibus has et. Nusquam singulis cum cu, at tincidunt conclusionemque vis, nec dicat labitur repudiare no. Quo ut propriae suscipit, tota ridens apeirian mea ei. Cu fastidii probatus vix, ei expetenda evertitur has.</p>
       </div>
@@ -66,9 +67,10 @@
     <!--Begin Work Section-->
     <div class="projects text-center">
       <h2 id="projects">Projects</h2>
+       <hr class="light">
       <div class="projects-container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-xs-12 thumb">
+        <div class="col-lg-4 col-md-6 col-xs-12 thumb" data-toggle="modal" data-target="#myModal">
           <a class="thumbnail">
             <img class="img-responsive" src="img/site1.png" alt="">
           </a>
@@ -108,6 +110,7 @@
         <div class="row">
             <div>
                 <h2>Say Hello</h2>
+                 <hr class="light">
                 <p>Want to get in touch? Reach out anytime.</p>
                 <ul class="list-inline banner-social-buttons contact-list">
                     <li>
@@ -127,6 +130,46 @@
         </div>
     </div>
     <!--End Contact Section-->
+    <!--Portfolio Modals-->
+    <div class="portfolio-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Project Title</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong><a href="http://startbootstrap.com">April 2014</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong><a href="http://startbootstrap.com">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--End Portfolio Modals-->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
