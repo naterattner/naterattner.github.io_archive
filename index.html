@@ -18,7 +18,34 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body id="page-top" data-spy-"scroll" data-target=".navbar" data-offset="50">
+    <!--Insert Sticky Nav Here-->
+  <div class="navigation">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" data-spy="affix" data-offset-top="630">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#page-top">Nate Rattner</a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav pull-right">
+        <li class="page-scroll"><a href="#about">About <span class="sr-only">(current)</span></a></li>
+        <li class="page-scroll"><a href="#projects">Projects</a></li>
+        <li class="page-scroll"><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+    <!--End Sticky Nav-->
     <!--Begin Landing Page-->
     <div class="landing">
       <h1>Sup homie.</h1>
@@ -27,33 +54,6 @@
       </div>
     </div>
     <!--End Landing Page-->
-    <!--Insert Sticky Nav Here-->
-  <div class="navigation">
-  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="630">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Nate Rattner</a>
-      </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="#about">About <span class="sr-only">(current)</span></a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-</div>
-    <!--End Sticky Nav-->
     <!--Begin About Section-->
 <div class="content-sections">
     <div class="row about text-center">
@@ -104,7 +104,7 @@
 
     <!--End Work Section-->
     <!--Begin Contact Section-->
-    <div class="contact text-center">
+    <div id="contact" class="contact text-center">
         <div class="row">
             <div>
                 <h2>Say Hello</h2>
