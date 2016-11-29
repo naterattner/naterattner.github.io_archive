@@ -76,12 +76,12 @@ nav li {
 .navbar-brand {
   font-size: 26px;
   color: white !important;
-  display: none;
+  /*display: none;*/
 }
 
-.navbar-nav {
+/*.navbar-nav {
   display: none;
-}
+}*/
 
 .navbar-nav li {
   font-size: 18px;
@@ -150,6 +150,22 @@ nav li {
   color: white;
 }
 @media (min-width: 768px) {
+  .navbar a {
+    color: #0892d0 !important;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .display-nav {
+    display: block;
+  }
+
   .navbar-custom {
     padding: 20px 0;
     border-bottom: none;
@@ -164,6 +180,9 @@ nav li {
     background:rgba(255,255,255, 0.9);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+
+
+
 }
 
 
@@ -183,7 +202,13 @@ nav li {
 hr {
 border-color: #0892d0;
   border-width: 3px;
+  max-width: 65%;
+}
+
+@media (min-width: 768px) {
+  hr {
   max-width: 25%;
+}
 }
 
 .content-sections {
@@ -279,10 +304,10 @@ border-color: #0892d0;
 
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #0892d0;
   outline: none;
   color: black;
-  background-color: #d3d3d3;
+  background-color: #0892d0;
 }
 
 ul.banner-social-buttons {
