@@ -272,13 +272,10 @@ border-color: #0892d0;
   cursor: pointer;
 }
 
-/* Possibly useful to remove heights on mobile
-@media only screen and (max-width : 767px) {
-    .projects img {
-        height: auto !important;
-    }
+.projects-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-*/
 
 /*End Projects Styles*/
 
@@ -380,7 +377,7 @@ ul.banner-social-buttons {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #2C3E50;
+  background-color: #0892d0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -391,7 +388,7 @@ ul.banner-social-buttons {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #2C3E50;
+  background-color: #0892d0;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
