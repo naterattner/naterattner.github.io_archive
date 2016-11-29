@@ -19,7 +19,7 @@ h6 {
   width: 100%;
   height: 100vh;*/
   background-size: cover;
-  background-image: url('img/bath_edited.jpg');
+  background-image: url('img/bath_edited2.jpg');
   background-position: center center;
   height: 100vh;
 
@@ -75,9 +75,12 @@ nav li {
 
 .navbar-brand {
   font-size: 26px;
-  color: black !important;
-  text-shadow: 0px 0px 1px white;
-  font-family:
+  color: white !important;
+  display: none;
+}
+
+.navbar-nav {
+  display: none;
 }
 
 .navbar-nav li {
@@ -86,8 +89,13 @@ nav li {
 
 .navbar a {
   color: black !important;
-  text-shadow: 0px 0px 1px white;
-  font-weight: 500;
+  /*background: rgba(255, 255, 255, 0.8);*/
+  /*text-shadow: 0px 0px 1px white;*/
+  font-weight: bolder !important;
+}
+
+.display-nav {
+  display: block;
 }
 
 /*navbar-custom Style*/
@@ -97,7 +105,7 @@ nav li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255,255,255, 0.8);
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -173,7 +181,7 @@ nav li {
 
 /*BEGIN Content Sections Styles*/
 hr {
-border-color: black;
+border-color: #0892d0;
   border-width: 3px;
   max-width: 25%;
 }

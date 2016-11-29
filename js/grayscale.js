@@ -8,8 +8,12 @@
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-brand, .navbar-nav li").addClass("display-nav")
+        $(".navbar-nav").addClass("display-nav")
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".navbar-brand, .navbar-nav li").removeClass("display-nav")
+        $(".navbar-nav").removeClass("display-nav")
     }
 }
 
