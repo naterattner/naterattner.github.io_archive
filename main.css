@@ -8,9 +8,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   letter-spacing: 1px;
+}
+
+a {
+  color: #0871d0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
 }
 
 /*BEGIN Top Landing Styles*/
@@ -41,19 +50,6 @@ h6 {
   width: 370px;
 }
 
-.landing img {
-  width: 200px;
-  height: 100;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  /*position:absolute;
-  top:70%;
-  left:50%;
-  transform: translate(-50%, -50%);*/
-}
 
 /*END Top Landing Styles*/
 
@@ -151,7 +147,7 @@ nav li {
 }
 @media (min-width: 768px) {
   .navbar a {
-    color: #0892d0 !important;
+    color: #0871d0 !important;
   }
 
   .navbar-brand {
@@ -181,7 +177,13 @@ nav li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
+  .about p {
+    text-align: justify !important;
+  }
 
+  .projects p {
+    text-align: center;
+  }
 
 }
 
@@ -200,7 +202,7 @@ nav li {
 
 /*BEGIN Content Sections Styles*/
 hr {
-border-color: #0892d0;
+border-color: #0871d0;
   border-width: 3px;
   max-width: 65%;
 }
@@ -220,7 +222,7 @@ border-color: #0892d0;
 
 .content-sections h2 {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
   font-size: 40px;
 }
 
@@ -244,6 +246,7 @@ border-color: #0892d0;
     width: 200px;
     height: 100;
     border-radius: 50%;
+    margin-top: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -280,7 +283,9 @@ border-color: #0892d0;
 /*End Projects Styles*/
 
 /*BEGIN Contact Styles*/
-
+.contact p {
+  text-align: center !important;
+}
 
 .contact ul {
   padding: 10px;
@@ -301,10 +306,10 @@ border-color: #0892d0;
 
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #0892d0;
+  border: 1px solid #0871d0;
   outline: none;
   color: black;
-  background-color: #0892d0;
+  background-color: rgba(8, 113, 208, 0.75);
 }
 
 ul.banner-social-buttons {
@@ -377,7 +382,7 @@ ul.banner-social-buttons {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #0892d0;
+  background-color: #0871d0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -388,7 +393,7 @@ ul.banner-social-buttons {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #0892d0;
+  background-color: #0871d0;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -405,4 +410,7 @@ ul.banner-social-buttons {
   max-width: 80%;
 }
 
+.portfolio-modal btn {
+  padding-left: 50px;
+}
 /*End Portfolio Modal Styles*/

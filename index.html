@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://use.fontawesome.com/935045fdae.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,7 +64,8 @@
          <img src="img/headshot.jpg" class="image-responsive">
        </div>
       <div class="about-text col-lg-10 col-xs-12">
-        <p>Lorem ipsum dolor sit amet, nam mundi laboramus ut, veri utamur deserunt est id. Enim veniam docendi ea sed, eu vim oratio soleat molestiae. An pro putent mediocritatem. Nibh vocibus pertinax ea sit, tantas soleat necessitatibus has et. Nusquam singulis cum cu, at tincidunt conclusionemque vis, nec dicat labitur repudiare no. Quo ut propriae suscipit, tota ridens apeirian mea ei. Cu fastidii probatus vix, ei expetenda evertitur has.</p>
+        <p>After an upbringing in New Rochelle, New York, as a celebrity second doubles tennis player and <a href="http://www.news12varsity.com/westchester/new-rochelle-high-school-2009-nysphsaa-football-championship-1.1235721" target="_blank">play-by-play broadcaster</a> for the Huguenots high school football team, I moved to the great midwest where I would spend the next six years of my life. My first stop was Evanston, Illinois where I attended Northwestern University and studied <a href="http://www.medill.northwestern.edu/" target="_blank"> journalism</a>, survived the <a href="https://www.dropbox.com/s/aydfcabk8qjy6qn/water.mov?dl=0" target="_blank">Polar Vortex of 2014</a>, and lived in <a href="https://www.dropbox.com/s/8my75hqp56xjjzx/Frederiksberg.jpg?dl=0" target="_blank"> Copenhagen</a> for a semester.</p>
+        <p>After school, I pursued an interest in the tech startup world through the <a href="http://ventureforamerica.org/" target="_blank"> Venture for America</a> fellowship program, which brought me to Columbus, Ohio for my first job. I’m now back in New York, thrilled to be at tech and ticketing startup<a href="https://seatgeek.com/" target="_blank"> SeatGeek</a>, where I work on communications, data, and the intersection of the two.</p>
       </div>
     </div>
     <!--End About Section-->
@@ -71,42 +73,28 @@
     <div class="projects text-center">
       <h2 id="projects">Projects</h2>
        <hr class="light">
-       <div class="projects-text col-lg-10 col-lg-offset-1 col-xs-12">
-        <p>I have a wide variety of interests, most of them within the digital world, including web development, writing, media, design, and data visualization.</p>
-        <p>Below is a handful of the projects I’m most excited about - more coming soon.</p>
+       <div class="projects-text col-lg-12 col-xs-12">
+        <p>I’m interested in a lot of things, many of them in the digital world: startups, web development, media, the impact technology can have on journalism and storytelling, and social entrepreneurship.</p>
+        <p>Below are a handful of projects, both personal and for work, that I’m most excited about.</p>
        </div>
       <div class="projects-container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-xs-12 thumb" data-toggle="modal" data-target="#myModal">
+        <div class="col-lg-4 col-md-6 col-xs-12 thumb" data-toggle="modal" data-target="#modal-1">
           <a class="thumbnail">
             <img class="img-responsive" src="img/site1.png" alt="">
           </a>
         </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 thumb">
+          <div class="col-lg-4 col-md-6 col-xs-12 thumb" data-toggle="modal" data-target="#modal-2">
             <a class="thumbnail">
               <img class="img-responsive" src="img/microsite.png" alt="">
             </a>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 thumb">
+          <div class="col-lg-4 col-md-6 col-xs-12 thumb" data-toggle="modal" data-target="#modal-3">
             <a class="thumbnail">
               <img class="img-responsive" src="img/harvey.jpg" alt="">
             </a>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 thumb">
-            <a class="thumbnail">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 thumb">
-            <a class="thumbnail">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 thumb">
-            <a class="thumbnail">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-          </div>
+
     </div>
   </div>
     </div>
@@ -116,9 +104,11 @@
     <div id="contact" class="contact text-center">
         <div class="row">
             <div>
-                <h2>Oh, Hello</h2>
+                <h2>Say Hello</h2>
                  <hr class="light">
+                <div class="contact-text-container">
                 <p>Want to get in touch? Reach out anytime.</p>
+                </div>
                 <ul class="list-inline banner-social-buttons contact-list">
                     <li>
                         <a href="mailto:naterattner@gmail.com" class="btn btn-default btn-lg" target="blank"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
@@ -138,7 +128,7 @@
     </div>
     <!--End Contact Section-->
     <!--Portfolio Modals-->
-    <div class="portfolio-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -152,17 +142,85 @@
                             <div class="modal-body">
                                 <h2>Personal Site v1.0</h2>
                                 <hr class="star-primary">
-                                <img src="img/site1_original.png" class="img-responsive img-centered" alt="">
-                                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                                <button type="button" class="btn btn-default btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <a href="http://www.naterattner.com" target="_blank"><img src="img/site1_original.png" class="img-responsive img-centered" alt=""></a>
+                                <p>This first version of <em>naterattner.com</em> was my first crack at a fully built out responsive site.</p>
+                                <ul class="list-inline banner-social-buttons contact-list">
+                                    <li>
+                                        <a href="http://www.naterattner.com" class="btn btn-default btn-lg" target="blank"><i class="fa fa-share"></i> Visit Project</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-default btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</span></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <!--End Portfolio Modals-->
 
+        <div class="portfolio-modal modal fade" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <div class="modal-body">
+                                    <h2>SeatGeek Application Microsite</h2>
+                                    <hr class="star-primary">
+                                    <a href="http://www.naterattner.com/seatgeek" target="_blank"><img src="img/microsite_original.png" class="img-responsive img-centered" alt=""></a>
+                                    <p>A microsite built as part of my application for my current role at SeatGeek.</p>
+                                    <ul class="list-inline banner-social-buttons contact-list">
+                                        <li>
+                                            <a href="http://www.naterattner.com/seatgeek" class="btn btn-default btn-lg" target="blank"><i class="fa fa-share"></i> Visit Project</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-default btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-modal modal fade" id="modal-3" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="modal-body">
+                                        <h2>The Mets and the SI Jinx</h2>
+                                        <hr class="star-primary">
+                                        <a href="http://class.medill.co/projects/mets_jinx/" target="_blank"><img src="img/harvey.jpg" class="img-responsive img-centered" alt=""></a>
+                                        <p>I researched, wrote, and built this web story for an assignment at Northwestern, in a Medill class called Interactive News. I began the class with no web development knowledge, and built this application with HTML, CSS, and some JavaScript and jQuery by the end of the 10 week quarter. Miraculously, the Mets have dramatically improved since the publication of this project.</p>
+                                        <ul class="list-inline banner-social-buttons contact-list">
+                                            <li>
+                                                <a href="http://class.medill.co/projects/mets_jinx/" class="btn btn-default btn-lg" target="blank"><i class="fa fa-share"></i> Visit Project</span></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn btn-default btn-lg" data-dismiss="modal"><i class="fa fa-times"></i> Close</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--End Portfolio Modals-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
