@@ -1,0 +1,188 @@
+<html>
+	<head>
+
+		<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+		<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+    <style>
+      html,body,#myChart {
+      height:100%;
+      width:100%;
+      }
+    </style>
+  </head>
+	<body>
+		<div id='myChart'></div>
+    <script>
+    //zingchart.THEME="classic";
+
+var myConfig = {
+            "graphset": [
+				        {
+				            "type": "rankflow",
+                    "globals":{
+                      "font-family": "Proxima Nova",
+                    },
+				            "background-color": "#FBFCFE",
+				            "plotarea": {
+				                "margin": "45 20 20 30"
+				            },
+				            "title": {
+				                "text": "Ranking The Summer's Top Festivals",
+				                "background-color": "#1673E6",
+                        "font-family": "Proxima Nova",
+                        "font-size": "25px",
+                        "color":"#fff"
+				            },
+				            "options": {
+												"global-ranking" : false,  // hide left column and make chart fit full width
+												"color-type": "palette",
+                        //"col-space":"0",
+                        //"row-space":"0",
+                        "flat":true,
+				                "palette": [
+				                    "#0B62CD",
+				                    "#003862",
+				                    "#082744",
+				                    "#49AF06",
+				                    "#F23535",
+				                    "#FC8832",
+				                    "#F6B811",
+				                    "#662D9E",
+				                    "#4D36D6",
+				                    "#B71C5B"
+				                ],
+				                "style": {
+				                    "label-overall": {
+				                        "text": "OVERALL RANK"
+				                    },
+				                    "item-overall": {
+				                        "font-weight": "bold"
+				                    },
+                            "tooltip": {
+                                "text": "%text: #%rank for %scale-value",
+                                "font-size": "13px",
+                                "font-color": "#fff",
+                                "background-color": "#424242",
+                                "shadow": false,
+                                "border-width": "0px",
+                                "border-color": "none",
+                                "border-radius": "8px"
+                            },
+                            "item-flow": {
+                                "font-family":"Proxima Nova",
+                                "font-size":"14px"
+                            }
+                            //"rank-left": {
+                              //"background-color":"#1673E6"
+                            //},
+                            //"rank-right": {
+                              //"background-color":"#1673E6"
+                            //}
+				                }
+				            },
+				            "scale-x": {
+				                "labels": [
+														"Lineup Value",
+														"Ticket Price",
+														"Value for Price",
+														"Lineup Depth"
+													],
+				                "values": [
+													"Lineup Value",
+													"Ticket Price",
+													"Value for Price",
+													"Lineup Depth"
+				                ],
+				                "item":{
+													"font-weight":"bold",
+				                  "font-size":"16px",
+				                  "font-color":"#000",
+                          //"padding-top":"10px"
+				                }
+				            },
+				            "series":[
+                        {
+                            "text":"Austin City Limits",
+                            "ranks":[5,4,3,8],
+                            "rank":3
+                        },
+                        {
+				                    "text":"Boston Calling",
+				                    "ranks":[8,1,1,7],
+				                    "rank":1
+				                },
+				                {
+				                    "text":"BottleRock",
+				                    "ranks":[3,2,2,4],
+				                    "rank":2
+				                },
+                        {
+				                    "text":"Coachella",
+				                    "ranks":[1,10,9,2],
+				                    "rank":8
+				                },
+                        {
+				                    "text":"FYF Festival",
+				                    "ranks":[6,9,10,9],
+				                    "rank":10
+				                },
+				                {
+				                    "text":"Governors Ball",
+				                    "ranks":[9,3,4,6],
+				                    "rank":4
+				                },
+				                {
+				                    "text":"Hangout Festival",
+				                    "ranks":[7,6,5,5],
+				                    "rank":5
+				                },
+                        {
+				                    "text":"Lollapalooza",
+				                    "ranks":[4,7,7,1],
+				                    "rank":7
+				                },
+                        {
+				                    "text":"Panorama",
+				                    "ranks":[10,5,8,10],
+				                    "rank":9
+				                },
+				                {
+				                    "text":"The Meadows",
+				                    "ranks":[2,8,6,3],
+				                    "rank":6
+				                }
+				            ],
+                    "source":{
+                "text":"Source: SeatGeek",
+                "font-size":"15px;",
+                "padding-bottom":"10px",
+                "text-align":"left"
+            }
+				        }
+				    ]
+				};
+
+        // must bind null. If you bind chartid it executes before
+        // the built in rankflow dataparse events
+        zingchart.bind(null, 'dataparse', function(e, oGraph) {
+
+          // adjust chart property based on chart dimensions
+          if (e.width < 768) {
+            oGraph.graphset[0].options['col-space'] = 0;
+          } else {
+            oGraph.graphset[0].options['col-space'] = null;
+          }
+
+          return oGraph;
+        });
+
+zingchart.render({
+	id : 'myChart',
+	data : myConfig,
+  height: "100%",
+	width: "100%"
+});
+    </script>
+	</body>
+</html>
