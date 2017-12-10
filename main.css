@@ -19,7 +19,8 @@ a {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  text-align: justify;
+  /*text-align: justify;*/
+  text-align: left;
 }
 
 /*BEGIN Top Landing Styles*/
@@ -178,7 +179,7 @@ nav li {
   }
 
   .about p {
-    text-align: justify !important;
+    /*text-align: justify !important;*/
   }
 
   .projects p {
