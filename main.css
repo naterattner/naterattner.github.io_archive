@@ -148,7 +148,7 @@ nav li {
 }
 @media (min-width: 768px) {
   .navbar a {
-    color: #0871d0 !important;
+    color: #000 !important;
   }
 
   .navbar-brand {
